@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Happy Anniversary Ima ❤️</title>
+  </head>
+  <body x-data="page()" >
+    <!-- <section class="header">
+      <div class="header-wrapper">
+        <div class="logo">
+          <div>Logo</div>
+        </div>
+        <div class="menu">
+          <div class="menu-item">Home</div>
+          <div class="menu-item">About</div>
+        </div>
+      </div>
+    </section> -->
+    <section class="hero">
+      <div class="wrapper animate__animated wrapper animate__animated animate__backInLeft">
+        <div class="swipers">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./src/img/1.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/2.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/3.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/4.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/5.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/6.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/7.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/8.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/9.jpg" alt="" srcset=""></div>
+            </div>
+          </div>
+          <div class="swiper swiperReverse">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./src/img/15.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/14.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/1.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/12.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/11.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/10.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/9.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/8.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/7.jpg" alt="" srcset=""></div>
+            </div>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./src/img/5.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/6.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/7.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/8.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/9.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/10.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/11.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/12.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img src="./src/img/14.jpg" alt="" srcset=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <div class="box wrapper animate__animated animate__backInRight">
+          <div class="page-1" x-show="show" x-transition.duration.1000ms>
+            <div class="title">
+              <p>Hai, hadiah ini dibuat untuk wanita spesial.</p>
+              <p>Harap konfirmasikan dulu identitas kamu ya</p>
+            </div>
+            <div class="form">
+              <input type="text" name="name" id="name" class="forms-item" placeholder="Nama Lengkap Kamu" x-ref="name">
+              <input type="email" name="email" id="email" class="forms-item" placeholder="Email Kamu" x-ref="email">
+              <input type="password" name="password" id="password" class="forms-item" placeholder="Kata Sandi" x-ref="password">
+              <input type="button" value="Masuk" class="input-btn" x-on:click="trigger($refs.name.value, $refs.email.value, $refs.password.value)">
+            </div>
+          </div>
+          <div class="loading-page" x-show="welcomingPage" x-transition.duration.1000ms>
+            <div class="circle-loading">
+              <div class="core-circle"></div>
+              <div class="spin-circle"></div>
+            </div>
+            <div class="text-loading">
+              <p class="text-load-wrap">Lagi Loading sayang</p>
+            </div>
+          </div>
+          
+          <div class="page-2 greeting-words" x-show="greetingWords">
+            <div class="box-bg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="pop-up" x-show="showPopUp" x-transition.duration.1000ms>
+        <div class="pop-up-box">
+          <p>Hai, nama atau email atau kata sandi kamu tidak tepat.</p>
+          <p>Harap Login Lagi</p>
+          <button class="login-again" x-on:click="popUp">
+            Okey
+          </button>
+        </div>
+      </section>
+      <section class="pop-up" x-show="happyAnnivPopUp" x-transition.duration.1000ms>
+        <div class="pop-up-box">
+          <p>Hai Bocahku sayang, happy anniversary pertama yaa. Duh lope banget deh wkwkwkw.</p>
+        </div>
+      </section>
+      <section class="pop-up" x-show="successPopUp" x-transition.duration.1000ms>
+        <div class="pop-up-box">
+          <div class="cute-box">
+            <img class="images" src="./src/img/84f1d8f5-a2b1-4c00-b88a-f36d0abfd461-removebg.png" alt="" srcset="">
+            <img src="./src/img/d03407b2-015d-4555-b271-1030a88c1dd0-removebg.png" alt="" class="images">
+          </div>
+          <div>
+            Berhasil Login
+          </div>
+          <button class="login-again popUp" x-on:click="successPopUpClose">
+            Okey
+          </button>
+        </div>
+      </section>
+    </section>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

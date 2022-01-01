@@ -1,0 +1,49 @@
+@tailwind components;
+@layer components {
+  .loading-page {
+    @apply max-w-fit h-96 w-96 flex flex-col absolute items-center
+  }
+  .circle-loading {
+    @apply h-40 w-40 flex justify-center items-center
+  }
+  .core-circle {
+    @apply h-32 w-32 border-8 border-white rounded-full bg-orange-500 border-double absolute
+  }
+  .spin-circle {
+    @apply h-16 w-16 border-white absolute rounded-full border-2 border-dashed
+  }
+  .text-loading {
+    @apply h-auto m-auto bg-white px-2 py-3 rounded shadow-lg
+  }
+  .text-load-wrap .letter {
+    @apply text-2xl font-semibold text-orange-500
+  }
+  .page-2 {
+    @apply h-700 w-700 bg-orange-500 flex absolute flex-wrap
+  }
+  .box-bg {
+    @apply h-700 w-700 flex absolute flex-wrap
+  }
+  .box-bg-items {
+    @apply bg-orange-500
+  }
+}
+
+.box-grid {
+  height: 50px;
+  width: 50px;
+  border: 1px solid orange;
+  background-color: white;
+}
+
+.box-bg-items {
+  height: 50px;
+  width: 50px;
+  border: 1px solid whitesmoke;
+}
+
+.box-bg {
+  background-image: url('./img/6.jpg');
+  background-size: auto;
+  background-position-y: center;
+}
