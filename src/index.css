@@ -20,7 +20,7 @@
         @apply flex flex-col lg:flex-row min-h-screen w-full justify-evenly items-center pt-10
     }
     .wrapper {
-        @apply h-700 max-h-700 w-5/6 sm:w-4/6 lg:w-5/12 bg-orange-500 flex justify-evenly items-center my-auto rounded-md shadow-2xl
+        @apply h-700 max-h-700 w-5/6 sm:w-4/6 lg:w-5/12 bg-red-500 flex justify-evenly items-center my-auto rounded-md shadow-2xl
     }
     .swipers .swiper {
         @apply grid content-center h-full w-3/6 sm:w-4/6 md:w-5/6 lg:w-4/6 xl:w-5/6 rounded-md
@@ -32,13 +32,13 @@
         @apply flex justify-center items-center h-screen w-11/12 sm:w-10/12 lg:w-5/12
     }
     .box {
-        @apply h-600 w-700 bg-orange-500 rounded-md flex items-center justify-center shadow-2xl
+        @apply h-600 w-700 bg-red-500 rounded-md flex items-center justify-center shadow-2xl
     }
     .page-1 {
         @apply w-full h-full flex flex-col justify-center items-center gap-10 z-10
     }
     .title {
-        @apply bg-white h-auto w-auto py-4 px-3 font-semibold text-orange-500 text-lg sm:text-lg lg:text-xl rounded-md text-center
+        @apply bg-white h-auto w-auto py-4 px-3 font-semibold text-red-500 text-lg sm:text-lg lg:text-xl rounded-md text-center
     }
     .form {
         @apply h-96 w-auto flex flex-col gap-5
@@ -62,7 +62,7 @@
         @apply h-96 w-96 font-semibold  text-gray-900 shadow-lg grid rounded-md content-center text-center justify-center
     }
     .popUp {
-        @apply h-auto w-auto py-1 px-2 bg-orange-500 font-bold text-white
+        @apply h-auto w-auto py-1 px-2 bg-red-500 font-bold text-white
     }
 }
 

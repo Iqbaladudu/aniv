@@ -7,7 +7,7 @@
     @apply h-40 w-40 flex justify-center items-center
   }
   .core-circle {
-    @apply h-32 w-32 border-8 border-white rounded-full bg-orange-500 border-double absolute
+    @apply h-32 w-32 border-8 border-white rounded-full bg-red-500 border-double absolute
   }
   .spin-circle {
     @apply h-16 w-16 border-white absolute rounded-full border-2 border-dashed
@@ -16,23 +16,23 @@
     @apply h-auto m-auto bg-white px-2 py-3 rounded shadow-lg
   }
   .text-load-wrap .letter {
-    @apply text-2xl font-semibold text-orange-500
+    @apply text-2xl font-semibold text-red-500
   }
   .page-2 {
-    @apply h-700 w-700 bg-orange-500 flex absolute flex-wrap
+    @apply h-700 w-700 bg-red-500 flex absolute flex-wrap
   }
   .box-bg {
     @apply h-700 w-700 flex absolute flex-wrap
   }
   .box-bg-items {
-    @apply bg-orange-500
+    @apply bg-red-500
   }
 }
 
 .box-grid {
   height: 50px;
   width: 50px;
-  border: 1px solid orange;
+  border: 1px solid #ef4444;
   background-color: white;
 }
 
